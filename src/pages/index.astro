@@ -1,0 +1,22 @@
+---
+// © 2024 Eduardo. Código licenciado bajo la licencia MIT.
+import Layout from "../layouts/Layout.astro";
+import Icons from "../sections/Icons.astro";
+import { tools } from "../data/tools";
+import { technologies } from "../data/technologies";
+import Footer from "../components/Footer.astro";
+import Projects from "../sections/projects.astro";
+import "../styles/index.css";
+import AboutMe from "../sections/about_me.astro";
+---
+
+<Layout title="Portafolio">
+  <h1>Desarrollador Frontend</h1>
+  <AboutMe />
+  <Projects />
+  <Icons title="Herramientas" icons={tools} />
+  <Icons title="Tecnologias" icons={technologies} />
+</Layout>
+<Footer />
+
+

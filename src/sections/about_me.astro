@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+import Coding from "../assets/images/coding.jpg"
+import "../styles/about.css";
+---
+
+<section>
+    <h2>Sobre mi</h2>
+    <div class="intro">
+      <div>
+        <p>
+          Me identifico como alguien que está constantemente buscando mejorar mis 
+          habilidades y conocimientos en el campo de la programación.
+        </p>
+        <p>
+          Mi enfoque en el aprendizaje continuo, junto con mi pasión por la tecnología,
+           me impulsa a explorar nuevas tecnologías y técnicas para mantenerme al tanto 
+           de las últimas tendencias en desarrollo de software.
+        </p>
+        <p>
+          Además, mis habilidades creativas me permiten encontrar soluciones 
+          innovadoras y eficientes a los desafíos y problemas se van presentando.
+        </p>
+      </div>
+      <Image
+      src={Coding} 
+      width={300}
+      style={"border-radius: 8%"}
+      decoding="async"
+      loading="lazy"
+      alt="laptop con codigo y taza de café al fondo"/>
+    </div>
+  </section>

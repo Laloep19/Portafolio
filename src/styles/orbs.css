@@ -1,0 +1,189 @@
+
+  .container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+    /* background-color: #101f3a; */
+  }
+
+  .orb {
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    opacity: 0.9;
+    animation: float 10s ease-in-out infinite;
+    mix-blend-mode: screen;
+    filter: blur(56px);
+  }
+
+  /* Animación flotante base */
+  @keyframes float {
+    0% {
+      transform: translate(0, 0);
+    }
+    50% {
+      transform: translate(var(--x-move), var(--y-move));
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  /* Estilos aleatorios para cada orbe */
+  .orb:nth-child(1) {
+    --x-move: 20vw;
+    --y-move: -30vh;
+    width: 120px;
+    height: 120px;
+    top: 10%;
+    left: 15%;
+    background: radial-gradient(
+      circle,
+      rgba(255, 0, 128, 1) 0%,
+      rgba(255, 0, 128, 0) 70%
+    );
+    animation-duration: 12s;
+  }
+
+  .orb:nth-child(2) {
+    --x-move: -25vw;
+    --y-move: 40vh;
+    width: 180px;
+    height: 180px;
+    top: 30%;
+    left: 70%;
+    background: radial-gradient(
+      circle,
+      rgba(0, 255, 128, 1) 0%,
+      rgba(0, 255, 128, 0) 70%
+    );
+    animation-duration: 15s;
+  }
+
+  .orb:nth-child(3) {
+    --x-move: 30vw;
+    --y-move: 20vh;
+    width: 100px;
+    height: 100px;
+    top: 60%;
+    left: 20%;
+    background: radial-gradient(
+      circle,
+      rgb(0, 106, 255) 0%,
+      rgba(0, 128, 255, 0) 70%
+    );
+    animation-duration: 10s;
+  }
+
+  .orb:nth-child(4) {
+    --x-move: -20vw;
+    --y-move: -30vh;
+    width: 200px;
+    height: 200px;
+    top: 15%;
+    left: 50%;
+    background: radial-gradient(
+      circle,
+      rgba(128, 0, 255, 1) 0%,
+      rgba(128, 0, 255, 0) 70%
+    );
+    animation-duration: 8s;
+  }
+
+  .orb:nth-child(5) {
+    --x-move: 15vw;
+    --y-move: -40vh;
+    width: 140px;
+    height: 140px;
+    top: 70%;
+    left: 80%;
+    background: radial-gradient(
+      circle,
+      rgba(255, 255, 0, 1) 0%,
+      rgba(255, 255, 0, 0) 70%
+    );
+    animation-duration: 18s;
+  }
+
+  .orb:nth-child(6) {
+    --x-move: -15vw;
+    --y-move: 30vh;
+    width: 160px;
+    height: 160px;
+    top: 40%;
+    left: 10%;
+    background: radial-gradient(
+      circle,
+      rgba(255, 128, 0, 1) 0%,
+      rgba(255, 128, 0, 0) 70%
+    );
+    animation-duration: 11s;
+  }
+
+  .orb:nth-child(7) {
+    --x-move: 25vw;
+    --y-move: -25vh;
+    width: 130px;
+    height: 130px;
+    top: 80%;
+    left: 30%;
+    background: radial-gradient(
+      circle,
+      rgb(0, 140, 255) 0%,
+      rgba(0, 255, 255, 0) 70%
+    );
+    animation-duration: 13s;
+  }
+
+  .orb:nth-child(8) {
+    --x-move: -20vw;
+    --y-move: 20vh;
+    width: 190px;
+    height: 190px;
+    top: 25%;
+    left: 85%;
+    background: radial-gradient(
+      circle,
+      rgba(255, 0, 255, 1) 0%,
+      rgba(255, 0, 255, 0) 70%
+    );
+    animation-duration: 9s;
+  }
+
+  .orb:nth-child(9) {
+    --x-move: 10vw;
+    --y-move: -20vh;
+    width: 150px;
+    height: 150px;
+    top: 55%;
+    left: 40%;
+    background: radial-gradient(
+      circle,
+      rgba(128, 255, 0, 1) 0%,
+      rgba(128, 255, 0, 0) 70%
+    );
+    animation-duration: 14s;
+  }
+
+  .orb:nth-child(10) {
+    --x-move: -30vw;
+    --y-move: 25vh;
+    width: 170px;
+    height: 170px;
+    top: 45%;
+    left: 65%;
+    background: radial-gradient(
+      circle,
+      rgb(255, 17, 0) 0%,
+      rgba(0, 0, 255, 0) 70%
+    );
+    animation-duration: 16s;
+  }

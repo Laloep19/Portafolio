@@ -1,0 +1,9 @@
+button{
+  all: unset;
+  cursor: pointer;
+  transition-duration: 400ms;
+}
+button:hover{
+    scale: 1.1;
+
+}

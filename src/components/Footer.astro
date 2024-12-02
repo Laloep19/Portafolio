@@ -1,0 +1,29 @@
+---
+import { Image } from "astro:assets";
+import '../styles/footer.css'; 
+import { contact } from "../data/contact";
+---
+
+<footer>
+    <h3>Contacto</h3>
+    <div class="contact">
+      {
+        contact.map((item) => (
+          <a href={item.link} target="_blank" class="hyperlink">
+            <Image src={item.image} 
+              alt={item.description} 
+              width={48}
+              height={48}
+              loading={"lazy"}/>
+              <span class="text">
+                  {item.text}
+              </span>
+          </a>
+          ))
+      }
+    </div>
+    <p class="copyright" >
+      © 2024 Eduardo Espinosa. Todos los derechos reservados. El código fuente está licenciado bajo la licencia MIT.
+    </p>
+    
+</footer>

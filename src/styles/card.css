@@ -1,0 +1,141 @@
+h3{
+    margin: 0;
+   }
+  .card {
+    width: 300px;
+    height: fit-content;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    color: white;
+    /* text-align: center; */
+    position: relative;
+  }
+
+  .card-content {
+    padding: 10px 15px;
+    position: relative;
+    z-index: 10;
+    color: white
+  }
+
+  .card-image{
+    padding: 20px;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+		.card-image {
+      padding: 20px 0;
+		}
+	}
+  /* Elipses borrosas */
+  .ellipse {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(50px);
+    opacity: 0.6;
+    z-index: 1;
+  }
+
+  .violet1 {
+    z-index: 4;
+    width: 90%;
+    height: 90%;
+    background-color: #6631FF;
+    top: -25%;
+    left: -20%;
+  }
+
+  .violet2 {
+    z-index: 3;
+    width: 80%;
+    height: 70%;
+    background-color: #A431FF;
+    bottom: -15%;
+    left: -15%;
+  }
+
+  .violet3 { 
+    width: 60%;
+    height: 60%;
+    background-color: #FF44F8;
+    top: -15%;
+    right: -15%;
+  }
+
+  .violet4 {
+    width: 80%;
+    height: 80%;
+    background-color: #EE89FF;
+    bottom: -15%;
+    right: -25%;
+  }
+  .blue1 {
+    z-index: 4;
+    width: 90%;
+    height: 90%;
+    background-color: #31DAFF;
+    top: -25%;
+    left: -20%;
+  }
+
+  .blue2 {
+    z-index: 3;
+    width: 80%;
+    height: 70%;
+    background-color: #316BFF;
+    bottom: -15%;
+    left: -15%;
+  }
+
+  .blue3 { 
+    width: 60%;
+    height: 60%;
+    background-color: #6AD5ED;
+    top: -15%;
+    right: -15%;
+  }
+
+  .blue4 {
+    width: 80%;
+    height: 80%;
+    background-color: #5BB0FF;
+    bottom: -15%;
+    right: -25%;
+  }
+  .orange1 {
+    z-index: 4;
+    width: 90%;
+    height: 90%;
+    background-color: #FF7C1D;
+    top: -25%;
+    left: -20%;
+  }
+
+  .orange2 {
+    z-index: 3;
+    width: 80%;
+    height: 70%;
+    background-color: #C800FA;
+    bottom: -15%;
+    left: -15%;
+  }
+
+  .orange3 { 
+    width: 60%;
+    height: 60%;
+    background-color: #FFF27E;
+    top: -15%;
+    right: -15%;
+  }
+
+  .orange4 {
+    width: 80%;
+    height: 80%;
+    background-color: #FFDE89;
+    bottom: -15%;
+    right: -25%;
+  }

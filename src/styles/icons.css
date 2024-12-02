@@ -1,0 +1,11 @@
+h2 {
+    padding: 30px 0;
+  }
+  section {
+    justify-items: center;
+  }
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    width: 70vw;
+  }

@@ -1,0 +1,31 @@
+---
+import { Image } from "astro:assets";
+import '../styles/icons.css'; 
+
+interface Icons{
+  image: ImageMetadata;
+	description: string;
+}
+interface Props {
+  title: string;
+  icons: Icons[];
+}
+
+const { title,  icons } = Astro.props as Props;
+---
+
+<section>
+  <h2>{title}</h2>
+  <div class="icons">
+    {
+      icons.map((item) => (
+        <Image src={item.image} 
+          alt={item.description} 
+          width={48}
+          height={48}
+          loading={"lazy"}/>
+      ))
+    }
+  </div>
+</section>
+

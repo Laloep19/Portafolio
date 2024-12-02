@@ -1,0 +1,37 @@
+---
+import Card from "../components/Card.astro";
+import { projects } from "../data/projects";
+import Modal from "../components/modal/Modal";
+---
+
+<section>
+  <h2>Proyectos</h2>
+  <div class="projects">
+    {
+      projects.map((project) => (
+          <Modal title={project.title} details={project.details} client:load>
+            <Card
+              version={project.version}
+              description={project.description}
+              title={project.title}
+              body={project.introduction}
+              image={project.image}
+            />
+          </Modal>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 80px;
+    padding: 20px;
+  }
+  .projects > li {
+    list-style: none; /* Opcional para evitar los marcadores */
+  }
+</style>

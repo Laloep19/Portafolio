@@ -1,0 +1,34 @@
+.overlay {
+  position: fixed;
+  overflow: auto;
+  display: grid;
+  top: 0;
+  left: 0;
+  width: -webkit-fill-available;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 1000;
+}
+.content{
+padding: 2rem;
+}
+.close {
+  position: fixed;
+  margin: 1rem;
+  padding: 0.4rem;
+  border-radius: 100%;
+  top: 0;
+  left: 0;
+}
+
+.close:hover{
+  background-color: rgb(64, 62, 62);
+}
+
+.title {
+  margin: 2rem 0;
+  font-size: 2rem;
+}
